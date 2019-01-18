@@ -1,0 +1,65 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+@import '~nes.css/scss/nes';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.feelings {
+  display:inline-flex;
+  div {
+    margin-right:3em;
+    &:last-child {
+      margin-right:0;
+    }
+  }
+}
+
+.message {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: flex-end;
+  .nes-balloon {
+    margin-bottom:2em;
+    outline:solid red 1px;
+  }
+}
+
+.main-menu {
+  display:grid;
+  grid-template-columns: 200px 1fr;
+  .nes-balloon {
+    padding:.2em;
+  }
+  .logo {
+    display:block;
+    margin-left: -22px;
+    margin-top: -15px;
+  }
+  .character {
+    margin-top: -20px;
+    margin-bottom: -40px;
+    i {
+      transform:scale(.5);
+    }
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    a:link {
+      margin-left:10px;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+<a href="{{$link}}">Log  me in, please!</a>
