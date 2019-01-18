@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,6 +17,8 @@ class AppServiceProvider extends ServiceProvider
         \Blade::if('admin', function() {
             return !auth()->guest() && auth()->user()->isAdmin();
         });
+        
+        Schema::defaultStringLength(191);
     }
 
     /**
